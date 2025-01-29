@@ -1,0 +1,26 @@
+<h2>Make Your Accusation</h2>
+<form method="POST">
+    {% csrf_token %}
+    <label>Suspect:</label>
+    <select name="suspect">
+        {% for suspect in suspects %}
+        <option value="{{ suspect.id }}">{{ suspect.name }}</option>
+        {% endfor %}
+    </select><br>
+
+    <label>Weapon:</label>
+    <select name="weapon">
+        {% for weapon in weapons %}
+        <option value="{{ weapon.id }}">{{ weapon.name }}</option>
+        {% endfor %}
+    </select><br>
+
+    <label>Room:</label>
+    <select name="room">
+        {% for room in rooms %}
+        <option value="{{ room.id }}">{{ room.name }}</option>
+        {% endfor %}
+    </select><br>
+
+    <button type="submit">Accuse</button>
+</form>
