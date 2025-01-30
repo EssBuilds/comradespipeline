@@ -1,37 +1,43 @@
 from django.shortcuts import render, get_object_or_404
-from .models import GameSession, Suspect, Weapon, Room
+from .models import Scenario, Suspect, Weapon, Room
 
 def start_game(request):
-    # If there's an active game, continue it, otherwise create a new one
-    game = GameSession.objects.filter(is_active=True).first()
-    if not game:
-        game = GameSession.create_new_game()
+    # Get a random scenario
+    scenario = Scenario.get_random_scenario()
 
-    return render(request, 'start.html', {'game': game})
+    if not scenario:
+        return render(request, 'error.html', {'message': 'No scenarios found. Please add some in the admin panel.'})
+
+    # Store scenario ID in session so the user plays the same one
+    request.session['scenario_id'] = scenario.id
+
+    return render(request, 'start.html', {'scenario': scenario})
 
 def make_accusation(request):
+    scenario_id = request.session.get('scenario_id')
+    scenario = get_object_or_404(Scenario, id=scenario_id)
+
     if request.method == "POST":
-        game = GameSession.objects.filter(is_active=True).first()
         suspect_id = request.POST.get("suspect")
         weapon_id = request.POST.get("weapon")
         room_id = request.POST.get("room")
 
-        suspect = get_object_or_404(Suspect, id=suspect_id)
-        weapon = get_object_or_404(Weapon, id=weapon_id)
-        room = get_object_or_404(Room, id=room_id)
-
         if (
-                suspect == game.secret_suspect and
-                weapon == game.secret_weapon and
-                room == game.secret_room
+                int(suspect_id) == scenario.correct_suspect.id and
+                int(weapon_id) == scenario.correct_weapon.id and
+                int(room_id) == scenario.correct_room.id
         ):
-            game.is_active = False
-            game.save()
             return render(request, 'win.html', {"message": "You solved the mystery!"})
         else:
-            return render(request, 'lose.html', {"message": "Wrong accusation! Try again."})
+            return render(request, 'lose.html', {"message": "Wrong guess! Try again."})
 
     suspects = Suspect.objects.all()
     weapons = Weapon.objects.all()
     rooms = Room.objects.all()
-    return render(request, 'accuse.html', {"suspects": suspects, "weapons": weapons, "rooms": rooms})
+
+    return render(request, 'accuse.html', {
+        "scenario": scenario,
+        "suspects": suspects,
+        "weapons": weapons,
+        "rooms": rooms
+    })

@@ -1,6 +1,9 @@
 <h2>Make Your Accusation</h2>
+<p>{{ scenario.description }}</p>
+
 <form method="POST">
     {% csrf_token %}
+
     <label>Suspect:</label>
     <select name="suspect">
         {% for suspect in suspects %}
