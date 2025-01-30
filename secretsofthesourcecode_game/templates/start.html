@@ -1,2 +1,3 @@
-<h1>Welcome to Cluedo</h1>
-<a href="{% url 'make_accusation' %}">Make an Accusation</a>
+<h1>{{ scenario.title }}</h1>
+<p>{{ scenario.description }}</p>
+<a href="{% url 'make_accusation' %}">Solve the Mystery</a>
