@@ -1,3 +1,16 @@
-<h1>{{ scenario.title }}</h1>
-<p>{{ scenario.description }}</p>
-<a href="{% url 'make_accusation' %}">Solve the Mystery</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="../static/styles/start.css">
+</head>
+<body>
+<div class="start-container">
+    <h1>{{ scenario.title }}</h1>
+    <p>{{ scenario.description }}</p>
+    <a href="{% url 'make_accusation' %}">Solve the Mystery</a>
+</div>
+</body>
+</html>
