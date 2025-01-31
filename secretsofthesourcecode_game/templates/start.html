@@ -6,11 +6,20 @@
     <title>My Page</title>
     <link rel="stylesheet" href="../static/styles/start.css">
 </head>
-<body>
+<body style="background-color: #072A40;">
+<div class="start-title-container">
+    <h1 class="main-font start-title">Secrets of The Source Code</h1>
+</div>
 <div class="start-container">
-    <h1>{{ scenario.title }}</h1>
-    <p>{{ scenario.description }}</p>
-    <a href="{% url 'make_accusation' %}">Solve the Mystery</a>
+    <h1 class="main-font">{{ scenario.title }}</h1>
+    <div class="scenario-description">
+        <p class="main-font scenario-font">{{ scenario.description }}</p>
+    </div>
+    <a href="{% url 'make_accusation' %}" class="button-link">
+        <button class="main-button">
+            Accuse
+        </button>
+    </a>
 </div>
 </body>
 </html>
