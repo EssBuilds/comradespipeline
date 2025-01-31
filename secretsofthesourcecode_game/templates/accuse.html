@@ -1,26 +1,44 @@
-<h2>Make Your Accusation</h2>
-<form method="POST">
-    {% csrf_token %}
-    <label>Suspect:</label>
-    <select name="suspect">
-        {% for suspect in suspects %}
-        <option value="{{ suspect.id }}">{{ suspect.name }}</option>
-        {% endfor %}
-    </select><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <link rel="stylesheet" href="../static/styles/accuse.css">
+</head>
+<body>
+<div class="accuse-container">
 
-    <label>Weapon:</label>
-    <select name="weapon">
-        {% for weapon in weapons %}
-        <option value="{{ weapon.id }}">{{ weapon.name }}</option>
-        {% endfor %}
-    </select><br>
+    <h2>Make Your Accusation</h2>
+    <p>{{ scenario.description }}</p>
 
-    <label>Room:</label>
-    <select name="room">
-        {% for room in rooms %}
-        <option value="{{ room.id }}">{{ room.name }}</option>
-        {% endfor %}
-    </select><br>
+    <form method="POST">
+        {% csrf_token %}
 
-    <button type="submit">Accuse</button>
-</form>
+        <label>Suspect:</label>
+        <select name="suspect">
+            {% for suspect in suspects %}
+            <option value="{{ suspect.id }}">{{ suspect.name }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label>Weapon:</label>
+        <select name="weapon">
+            {% for weapon in weapons %}
+            <option value="{{ weapon.id }}">{{ weapon.name }}</option>
+            {% endfor %}
+        </select><br>
+
+        <label>Room:</label>
+        <select name="room">
+            {% for room in rooms %}
+            <option value="{{ room.id }}">{{ room.name }}</option>
+            {% endfor %}
+        </select><br>
+
+        <button type="submit">Accuse</button>
+    </form>
+
+</div>
+</body>
+</html>
