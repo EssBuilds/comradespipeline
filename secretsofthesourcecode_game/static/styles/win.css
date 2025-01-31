@@ -28,6 +28,11 @@ a {
     color: #f7f7f7;
 }
 
+img {
+    max-width: 30%;
+    height: auto;
+}
+
 .win-container {
     display: flex;
     flex-direction: column;
