@@ -1,8 +1,21 @@
+
+#accuse-btn {
+    width: 25%;
+    background-color: #735D1D;
+    color: #F2F2F2;
+}
+.custom-card{
+    background-color: #735D1D;
+    color: #F2F2F2;
+}
+
 .accuse-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    width: 100%;
+    background-color: #072a40;
+    columns: #F2F2F2;
 }
