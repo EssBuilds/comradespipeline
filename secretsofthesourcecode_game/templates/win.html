@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>Win Page</title>
     <link rel="stylesheet" href="../static/styles/win.css">
 </head>
 <body>
 <div class="win-container">
+    <div>
+        <h1>Secrets of the Source Code</h1>
+    </div>
     <h2>{{ message }}</h2>
-    <a href="{% url 'start_game' %}">Play Again</a>
+    <h3><a href="{% url 'start_game' %}">Play Again</a></h3>
 </div>
 </body>
 </html>

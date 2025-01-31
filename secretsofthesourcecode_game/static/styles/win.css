@@ -1,8 +1,38 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&family=Permanent+Marker&display=swap');
+
+/* Global Styles */
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    color: #f7f7f7;
+    margin: 2;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
+    color: #f7f7f7;
+    margin: 1;
+}
+
+h3 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    color: #f7f7f7;
+    margin: 2;
+}
+
+a {
+    color: #f7f7f7;
+}
+
 .win-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #072a40;
 }
