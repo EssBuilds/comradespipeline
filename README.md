@@ -402,6 +402,11 @@ used the recommended WC3CSS Validator to validate all of my CSS files.
 
 ![CSS](https://github.com/user-attachments/assets/4b7f0260-975b-49b1-94e7-41b86a980359)
 
+The error was corrected 
+
+![cssnoerror](https://github.com/user-attachments/assets/1ecf6761-ecae-4f1d-ada7-1caccef0dae8)
+
+
 ## Responsivity 
 
  Checked for compatibility across various devices and screen sizes.
