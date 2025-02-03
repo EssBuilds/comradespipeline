@@ -65,9 +65,9 @@
     margin-bottom: 20px;
     border: solid 1px #072A40;
     border-radius: 20px;
+}
 
-    .scenario-font {
-        color: #072A40;
-        font-size: 22px;
-    }
+.scenario-font {
+    color: #072A40;
+    font-size: 22px;
 }
