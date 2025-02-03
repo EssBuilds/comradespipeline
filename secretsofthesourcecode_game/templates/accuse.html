@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<form method="POST">
     <div class="accuse-container">
         <div class="row d-flex justify-content-center">
             <!-- Suspect Card -->
@@ -24,7 +25,6 @@
                     <img id="suspectImage" src="{% static 'images/suspects/ada.png' %}" class="card-img-top" alt="Suspect image">
                     <div class="card-body">
                         <h5 class="card-title">Select a Suspect</h5>
-                        <form method="POST">
                             {% csrf_token %}
                             <label>Suspect:</label>
                             <select name="suspect" id="suspectSelect">
@@ -35,7 +35,6 @@
                                 <option value="5" data-img="{% static 'images/suspects/ada.png' %}">MS. ADA NULL</option>
                                 <option value="6" data-img="{% static 'images/suspects/java.png' %}">MR. JAVA SCRIPT</option>
                             </select>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -46,7 +45,6 @@
                     <img id="weaponImage" src="{% static 'images/weapons/Victorian-style wrench.png' %}" class="card-img-top" alt="Weapon image">
                     <div class="card-body">
                         <h5 class="card-title">Select a Weapon</h5>
-                        <form method="POST">
                             {% csrf_token %}
                             <label>Weapon:</label>
                             <select name="weapon" id="weaponSelect">
@@ -57,7 +55,6 @@
                                 <option value="5" data-img="{% static 'images/weapons/Victorian-style rope, uncoiled.png' %}">ROPE</option>
                                 <option value="6" data-img="{% static 'images/weapons/a piece of lead piping.png' %}">LEAD PIPE</option>
                             </select>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -68,7 +65,6 @@
                     <img id="roomImage" src="{% static 'images/rooms/whispering hall victorian style.png' %}" class="card-img-top" alt="Room image">
                     <div class="card-body"></div>
                         <h5 class="card-title">Select a Room</h5>
-                        <form method="POST">
                             {% csrf_token %}
                             <label>Room:</label>
                             <select name="room" id="roomSelect">
@@ -79,12 +75,12 @@
                                 <option value="5" data-img="{% static 'images/rooms/the obsidian library Victorian style.png' %}">THE OBSIDIAM LIBRARY</option>
                                 <option value="6" data-img="{% static 'images/rooms/Victorian-style moonlight conservatory.png' %}">THE MOONLIT CONSERVATORY</option>
                             </select>
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
         <button type="submit" id="accuse-btn">Accuse</button>
+        </div>
+</form>
 </body>
 
     <!-- Bootstrap JS -->
