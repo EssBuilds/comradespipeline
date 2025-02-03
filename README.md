@@ -338,6 +338,28 @@ We have used Lighthouse to check the performance of the site.
 ### Automated Testing
 
 <details>
+
+<summary>W3C Validator</summary>
+
+<br>
+
+
+
+</details>
+
+>#### JS Hint
+
+We used a small amount of JavaScript on our Accuse page so that when a user selects an option the related image will appear. 
+
+This was testing using [JS HINT](https://jshint.com/)
+
+![Room Example](Documentation/Images/js_testing.png.jpg)
+
+
+
+
+<details>
+  
 <summary>WAVE</summary>
 <br>
 
@@ -380,6 +402,17 @@ used the recommended HTML W3C Validator to validate all of my HTML files.
 ![html](https://github.com/user-attachments/assets/6c730aa8-ad3c-48a9-b708-148a3fa7c704)
 
 ## Responsivity
+
+used the recommended WC3CSS Validator to validate all of my CSS files.
+
+![CSS](https://github.com/user-attachments/assets/4b7f0260-975b-49b1-94e7-41b86a980359)
+
+The error was corrected 
+
+![cssnoerror](https://github.com/user-attachments/assets/1ecf6761-ecae-4f1d-ada7-1caccef0dae8)
+
+
+## Responsivity 
 
  Checked for compatibility across various devices and screen sizes.
 

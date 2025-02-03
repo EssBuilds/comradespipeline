@@ -26,11 +26,11 @@
     <div class="scenario-description">
         <p class="main-font scenario-font">{{ scenario.description }}</p>
     </div>
-    <a href="{% url 'make_accusation' %}" class="button-link">
-        <button class="main-button">
-            Accuse
-        </button>
-    </a>
+    <button class="main-button">
+        <a href="{% url 'make_accusation' %}" class="button-link">
+        Accuse
+        </a>
+    </button>
 </div>
 
 </body>
