@@ -369,6 +369,8 @@ We have used Lighthouse to check the performance of the site.
 
 ## Responsivity 
 
+ Checked for compatibility across various devices and screen sizes.
+
 ![resp](https://github.com/user-attachments/assets/112b94d4-b728-48bb-be99-7af03adc6256)
 
 ### Bugs
