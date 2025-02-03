@@ -1,15 +1,26 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link rel="stylesheet" href="../static/styles/start.css">
+    <title>Start Page</title>
+    <link rel="stylesheet" href="{% static 'styles/start.css' %}">
 </head>
 <body style="background-color: #072A40;">
 <div class="start-title-container">
     <h1 class="main-font start-title">Secrets of The Source Code</h1>
 </div>
+
+<div class="start-help-container">
+    <h1 class="main-font">How To Play</h1>
+    <div class="scenario-description">
+        <p class="scenario-font-help">To unravel the Secret of the Source Code, carefully examine the scenario! Every clue you need to solve the mystery is hidden within.</p>
+        <p class="scenario-font-help">Once you have inspected the scenario below for clues, press 'Accuse' to start solving the mystery!</p>
+    </div>
+</div>
+
 <div class="start-container">
     <h1 class="main-font">{{ scenario.title }}</h1>
     <div class="scenario-description">
@@ -21,5 +32,6 @@
         </button>
     </a>
 </div>
+
 </body>
 </html>
