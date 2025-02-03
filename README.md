@@ -391,7 +391,9 @@ As a player, I want to restart the game after finishing a round so that I can pl
 As a player, I want my score to be tracked across games so that I can see my performance over time and compare how well I did in each round. CHANGED TO WON'T HAVE
 
 
+used the recommended HTML W3C Validator to validate all of my HTML files.
 
+![html](https://github.com/user-attachments/assets/6c730aa8-ad3c-48a9-b708-148a3fa7c704)
 
 ## Responsivity 
 
