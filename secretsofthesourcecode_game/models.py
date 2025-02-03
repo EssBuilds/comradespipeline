@@ -1,11 +1,13 @@
 from django.db import models
 import random
 
+
 class Suspect(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
+
 
 class Weapon(models.Model):
     name = models.CharField(max_length=100)
@@ -13,11 +15,13 @@ class Weapon(models.Model):
     def __str__(self):
         return self.name
 
+
 class Room(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
+
 
 class Scenario(models.Model):
     title = models.CharField(max_length=255)  # Name of the scenario
