@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    {% load static %}
 
 <head>
     <meta charset="UTF-8">
@@ -18,27 +19,22 @@
             <!-- Suspect Card -->
             <div class="col-md-3 mb-3">
                 <div class="card custom-card">
-                    <!-- Added a unique ID and updated alt text -->
-                    <img id="suspectImage" src="https://via.placeholder.com/150" class="card-img-top"
-                        alt="Suspect image">
+                    <img id="suspectImage" src="../static/images/suspects/ada.png" class="card-img-top" alt="Suspect image">
                     <div class="card-body">
                         <h5 class="card-title">Select a Suspect</h5>
                         <form method="POST">
                             {% csrf_token %}
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
+                            <!-- <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p> -->
                             <label>Suspect:</label>
-                            <!-- Added a unique ID to the select -->
                             <select name="suspect" id="suspectSelect">
-                                {% for suspect in suspects %}
-                                <!-- Added a data attribute for the image URL -->
-                                <option value="{{ suspect.id }}"
-                                    data-img="{{ suspect.image_url|default:'https://via.placeholder.com/150' }}">
-                                    {{ suspect.name }}
-                                </option>
-                                {% endfor %}
+                                <option value="1" data-img="../static/images/violet.png">PROFESSOR VIOLET C. SHARP</option>
+                                <option value="2" data-img="../static/images/suspects/indigo.png">DR. INDIGO BYTE</option>
+                                <option value="3" data-img="../static/images/suspects/ruby.png">MISS RUBY GIT</option>
+                                <option value="4" data-img="../static/images/suspects/colonel.png">COLONEL HEX DECIMAL</option>
+                                <option value="5" data-img="../static/images/suspects/ada.png">MS. ADA NULL</option>
+                                <option value="6" data-img="../static/images/suspects/java.png">MR. JAVA SCRIPT</option>
                             </select>
                         </form>
                     </div>
@@ -48,24 +44,22 @@
             <!-- Weapon Card -->
             <div class="col-md-3 mb-3">
                 <div class="card custom-card">
-                    <!-- Unique ID and updated alt -->
-                    <img id="weaponImage" src="https://via.placeholder.com/150" class="card-img-top" alt="Weapon image">
+                    <img id="weaponImage" src="../static/images/weapons/Victorian-style wrench.png" class="card-img-top" alt="Weapon image">
                     <div class="card-body">
                         <h5 class="card-title">Select a Weapon</h5>
                         <form method="POST">
                             {% csrf_token %}
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
+                            <!-- <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p> -->
                             <label>Weapon:</label>
                             <select name="weapon" id="weaponSelect">
-                                {% for weapon in weapons %}
-                                <option value="{{ weapon.id }}"
-                                    data-img="{{ weapon.image_url|default:'https://via.placeholder.com/150' }}">
-                                    {{ weapon.name }}
-                                </option>
-                                {% endfor %}
+                                <option value="1" data-img="../static/images/weapons/Victorian-style wrench.png">WRENCH</option>
+                                <option value="2" data-img="../static/images/weapons/Victorian style knife.png">KNIFE</option>
+                                <option value="3" data-img="../static/images/weapons/Victorian-style revolver.png">REVOLVER</option>
+                                <option value="4" data-img="../static/images/weapons/a single candle holder.png">CANDLESTICK</option>
+                                <option value="5" data-img="../static/images/weapons/Victorian-style rope, uncoiled.png">ROPE</option>
+                                <option value="6" data-img="../static/images/weapons/a piece of lead piping.png">LEAD PIPE</option>
                             </select>
                         </form>
                     </div>
@@ -75,24 +69,22 @@
             <!-- Room Card -->
             <div class="col-md-3 mb-3">
                 <div class="card custom-card">
-                    <!-- Unique ID and updated alt -->
-                    <img id="roomImage" src="https://via.placeholder.com/150" class="card-img-top" alt="Room image">
-                    <div class="card-body">
+                    <img id="roomImage" src="../static/images/rooms/whispering hall victorian style.png" class="card-img-top" alt="Room image">
+                    <div class="card-body"></div>
                         <h5 class="card-title">Select a Room</h5>
                         <form method="POST">
                             {% csrf_token %}
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up the bulk of the card's
-                                content.
-                            </p>
+                            <!-- <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p> -->
                             <label>Room:</label>
                             <select name="room" id="roomSelect">
-                                {% for room in rooms %}
-                                <option value="{{ room.id }}"
-                                    data-img="{{ room.image_url|default:'https://via.placeholder.com/150' }}">
-                                    {{ room.name }}
-                                </option>
-                                {% endfor %}
+                                <option value="1" data-img="../static/images/rooms/whispering hall victorian style.png">THE WHISPERING HALL</option>
+                                <option value="2" data-img="../static/images/rooms/old Victorian chamber.png">THE SHADOW CHAMBER</option>
+                                <option value="3" data-img="../static/images/rooms/crimson parlor Victorian style.png">THE CRIMSON PARLOR</option>
+                                <option value="4" data-img="../static/images/rooms/the forgotten wine cellar, dusty and with cobwebs, Victorian style.png">THE FORGOTTEN CELLAR</option>
+                                <option value="5" data-img="../static/images/rooms/the obsidian library Victorian style.png">THE OBSIDIAM LIBRARY</option>
+                                <option value="6" data-img="../static/images/rooms/Victorian-style moonlight conservatory.png">THE MOONLIT CONSERVATORY</option>
                             </select>
                         </form>
                     </div>
@@ -101,6 +93,7 @@
         </div>
         <button type="submit" id="accuse-btn">Accuse</button>
     </div>
+</body>
 
 
 
@@ -115,7 +108,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- accuse js -->
-    <script src="/secretsofthesourcecode_game/static/js/accuse.js"></script>
+    <script src="../static/js/accuse.js"></script>
 </body>
 
 </html>
