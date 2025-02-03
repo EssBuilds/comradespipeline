@@ -18,7 +18,7 @@
     </div>
     <h2>{{ message }}</h2>
     <div class="Lose-image" text-align="center">
-        <img src="../static/images/Cluedo style You Lose page without people.png" alt="you lose" style="display: block; margin: 0 auto;">
+        <img src="{% static 'images/Cluedo style You Win page without people.png' %}" alt="you win" style="display: block; margin: 0 auto;">
     </div>
     <h3><a href="{% url 'start_game' %}">Play Again</a></h3>
 </div>
