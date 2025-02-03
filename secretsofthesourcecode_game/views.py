@@ -41,3 +41,7 @@ def make_accusation(request):
         "weapons": weapons,
         "rooms": rooms
     })
+
+def lose(request):
+    context = {'message': 'You have lost the game!'}
+    return render(request, 'lose.html', context)

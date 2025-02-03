@@ -15,9 +15,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     background-color: #072A40;
-    margin-top: 200px;
+}
+
+.start-help-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #072A40;
+    margin: 20px 0;
+}
+
+.scenario-font-help {
+    color: #072A40;
+    font-size: 22px;
+    margin: 10px 0;
 }
 
 .main-font {
