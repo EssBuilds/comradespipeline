@@ -346,13 +346,16 @@ We have used Lighthouse to check the performance of the site.
 
 </details>
 
-<details>
-<summary>JS Hint</summary>
-<br>
+>#### JS Hint
+
+We used a small amount of JavaScript on our Accuse page so that when a user selects an option the related image will appear. 
+
+This was testing using [JS HINT](https://jshint.com/)
+
+![Room Example](Documentation/Images/js_testing.png.jpg)
 
 
 
-</details>
 
 <details>
 <summary>WAVE</summary>

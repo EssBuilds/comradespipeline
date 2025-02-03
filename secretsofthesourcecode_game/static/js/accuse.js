@@ -16,4 +16,4 @@ document.addEventListener("DOMContentLoaded", function () {
     updateImage("suspectSelect", "suspectImage");
     updateImage("weaponSelect", "weaponImage");
     updateImage("roomSelect", "roomImage");
-})
+});
