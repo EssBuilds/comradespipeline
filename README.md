@@ -213,11 +213,32 @@ Yes
 
 ## Technologies Used
 
+GIT - used for version control. (git add, git commit, git push)
+
+GITPOD - used as a cloud-based IDE for development.
+
+HEROKU - used for hosting the deployed back-end site.
+
+POSTGRESQL  - used as the relational database management.
+
+CLOUDINARY - used for online static file storage.
+
+WHITENOISE -  used for serving static files with Heroku.
+
+FONT AWESOME - used for the icons.
+
+
 ### Languages Used
 
-HTML, CSS,
+HTML - used for the main site content.
+
+CSS -  used for the main site design and layout.
+
+PYTHON - used as the back-end programming language.
 
 ### Frameworks, Libraries & Programs Used
+
+Django - used as the Python framework for the site.
 
 Balsamiq - Used to create wireframes.
 
