@@ -338,6 +338,7 @@ We have used Lighthouse to check the performance of the site.
 ### Automated Testing
 
 <details>
+
 <summary>W3C Validator</summary>
 
 <br>
@@ -358,9 +359,11 @@ This was testing using [JS HINT](https://jshint.com/)
 
 
 <details>
+  
 <summary>WAVE</summary>
 <br>
 
+[WAVE](Documentation/Images/wave.png)
 
 
 </details>
@@ -369,7 +372,7 @@ This was testing using [JS HINT](https://jshint.com/)
 <summary>Lighthouse</summary>
 <br>
 
-
+[Lighthouse](Documentation/Images/lighthouse.png)
 
 </details>
 
@@ -397,6 +400,8 @@ As a player, I want my score to be tracked across games so that I can see my per
 used the recommended HTML W3C Validator to validate all of my HTML files.
 
 ![html](https://github.com/user-attachments/assets/6c730aa8-ad3c-48a9-b708-148a3fa7c704)
+
+## Responsivity
 
 used the recommended WC3CSS Validator to validate all of my CSS files.
 
