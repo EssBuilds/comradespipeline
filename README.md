@@ -338,26 +338,10 @@ We have used Lighthouse to check the performance of the site.
 ### Automated Testing
 
 <details>
-<summary>W3C Validator</summary>
-
-<br>
-
-
-
-</details>
-
-<details>
-<summary>JS Hint</summary>
-<br>
-
-
-
-</details>
-
-<details>
 <summary>WAVE</summary>
 <br>
 
+[WAVE](Documentation/Images/wave.png)
 
 
 </details>
@@ -366,7 +350,7 @@ We have used Lighthouse to check the performance of the site.
 <summary>Lighthouse</summary>
 <br>
 
-
+[Lighthouse](Documentation/Images/lighthouse.png)
 
 </details>
 
@@ -395,7 +379,7 @@ used the recommended HTML W3C Validator to validate all of my HTML files.
 
 ![html](https://github.com/user-attachments/assets/6c730aa8-ad3c-48a9-b708-148a3fa7c704)
 
-## Responsivity 
+## Responsivity
 
  Checked for compatibility across various devices and screen sizes.
 
