@@ -338,6 +338,7 @@ We have used Lighthouse to check the performance of the site.
 ### Automated Testing
 
 <details>
+
 <summary>W3C Validator</summary>
 
 <br>
@@ -358,9 +359,11 @@ This was testing using [JS HINT](https://jshint.com/)
 
 
 <details>
+  
 <summary>WAVE</summary>
 <br>
 
+[WAVE](Documentation/Images/wave.png)
 
 
 </details>
@@ -369,7 +372,7 @@ This was testing using [JS HINT](https://jshint.com/)
 <summary>Lighthouse</summary>
 <br>
 
-
+[Lighthouse](Documentation/Images/lighthouse.png)
 
 </details>
 
@@ -398,9 +401,16 @@ used the recommended HTML W3C Validator to validate all of my HTML files.
 
 ![html](https://github.com/user-attachments/assets/6c730aa8-ad3c-48a9-b708-148a3fa7c704)
 
+## Responsivity
+
 used the recommended WC3CSS Validator to validate all of my CSS files.
 
 ![CSS](https://github.com/user-attachments/assets/4b7f0260-975b-49b1-94e7-41b86a980359)
+
+The error was corrected 
+
+![cssnoerror](https://github.com/user-attachments/assets/1ecf6761-ecae-4f1d-ada7-1caccef0dae8)
+
 
 ## Responsivity 
 
