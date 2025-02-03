@@ -395,6 +395,10 @@ used the recommended HTML W3C Validator to validate all of my HTML files.
 
 ![html](https://github.com/user-attachments/assets/6c730aa8-ad3c-48a9-b708-148a3fa7c704)
 
+used the recommended WC3CSS Validator to validate all of my CSS files.
+
+![CSS](https://github.com/user-attachments/assets/4b7f0260-975b-49b1-94e7-41b86a980359)
+
 ## Responsivity 
 
  Checked for compatibility across various devices and screen sizes.
