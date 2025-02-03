@@ -1,17 +1,22 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Scenario, Suspect, Weapon, Room
 
+
 def start_game(request):
     # Get a random scenario
     scenario = Scenario.get_random_scenario()
 
     if not scenario:
-        return render(request, 'error.html', {'message': 'No scenarios found. Please add some in the admin panel.'})
+        return render(
+            request, 'error.html',
+            {'message':
+                 'No scenarios found. Please add some in the admin panel.'})
 
     # Store scenario ID in session so the user plays the same one
     request.session['scenario_id'] = scenario.id
 
     return render(request, 'start.html', {'scenario': scenario})
+
 
 def make_accusation(request):
     scenario_id = request.session.get('scenario_id')
@@ -27,9 +32,11 @@ def make_accusation(request):
                 int(weapon_id) == scenario.correct_weapon.id and
                 int(room_id) == scenario.correct_room.id
         ):
-            return render(request, 'win.html', {"message": "You solved the mystery!"})
+            return render(request, 'win.html', {"message":
+                                                    "You solved the mystery!"})
         else:
-            return render(request, 'lose.html', {"message": "Wrong guess! Try again."})
+            return render(request, 'lose.html', {"message":
+                                                     "Wrong guess! Try again."})
 
     suspects = Suspect.objects.all()
     weapons = Weapon.objects.all()
@@ -41,6 +48,7 @@ def make_accusation(request):
         "weapons": weapons,
         "rooms": rooms
     })
+
 
 def lose(request):
     context = {'message': 'You have lost the game!'}
