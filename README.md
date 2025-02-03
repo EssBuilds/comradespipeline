@@ -95,7 +95,7 @@ Wireframes were created for mobile and desktop using Balsamiq.
 <summary>Start Page Wireframe</summary>
 <br>
 
-![start page]
+![start page](Documentation/Images/image%20(1).png)
 
 </details>
 
@@ -103,7 +103,7 @@ Wireframes were created for mobile and desktop using Balsamiq.
 <summary>Scenario Page Wireframe</summary>
 <br>
 
-![scenario page]
+![scenario page](Documentation/Images/image%20(2).png)
 
 </details>
 
@@ -111,7 +111,7 @@ Wireframes were created for mobile and desktop using Balsamiq.
 <summary>Accuse Page Wireframe</summary>
 <br>
 
-![accuse page]
+![accuse page](Documentation/Images/image%20(3).png)
 
 
 </details>
@@ -120,7 +120,7 @@ Wireframes were created for mobile and desktop using Balsamiq.
 <summary>Win Page Wireframe</summary>
 <br>
 
-![win page]
+![win page](Documentation/Images/image%20(4).png)
 
 
 </details>
@@ -129,7 +129,7 @@ Wireframes were created for mobile and desktop using Balsamiq.
 <summary>Lose Page Wireframe</summary>
 <br>
 
-![lose page]
+![lose page](Documentation/Images/image%20(5).png)
 
 
 </details>
@@ -186,15 +186,25 @@ Main Font: https://fonts.google.com/specimen/Patrick+Hand
 
 ## Features
 
+ - Start game page
 
-### General features on each page
+ - Bootstrap cards to display information
 
+ - Win/Lose page to reflect the outcome of the game.
 
+ - Images of the suspects/weapons/rooms.
+
+ - Murder scenarios from which the player can work out the crime and criminal.
 
 ### Future Implementations
 
 Future features include:
 
+- User profile - build your own detective profile.
+
+- Scoreboard
+
+- Different levels of difficulty.
 
 
 ### Accessibility
@@ -215,7 +225,7 @@ Yes
 
 ### Languages Used
 
-HTML, CSS,
+HTML, CSS, JavaScript, Python
 
 ### Frameworks, Libraries & Programs Used
 
@@ -230,6 +240,8 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 Adobe Colors - to select a colour theme which matches our theme.
 
 Bootstrap v5.3 - CSS framework used for design of the page.
+
+Further information is available in the [requirements.txt file](requirements.txt)
 
 ### Use of AI
 
@@ -340,22 +352,38 @@ We have used Lighthouse to check the performance of the site.
 
 ### Testing User Stories
 
+As a user, I want to be able to create a game session so that I can play a new round of Secrets of the source code. MUST HAVE - PASS
+
+As a player, I want to be able to make an accusation (suspect, weapon, room) so that I can try to solve the mystery. MUST HAVE - PASS
+
+As a player, I want to be notified when I correctly solve the mystery so that I can celebrate my victory. MUST HAVE - PASS
+
+As a player, I want to be notified if my accusation is wrong so that I can retry and keep playing. MUST HAVE - PASS
+
+As an admin, I want to be able to add suspects, weapons, and rooms via the admin panel so that the game can be customized. MUST HAVE - PASS
+
+As a user, I want a simple and intuitive interface so that I can easily play the game. SHOULD HAVE - PASS
+
+As a player, I want to restart the game after finishing a round so that I can play again. SHOULD HAVE - PASS
+
+As a player, I want my score to be tracked across games so that I can see my performance over time and compare how well I did in each round. CHANGED TO WON'T HAVE
 
 
 
-### Full Testing
+### Code Validation
+
+### HTML
+
+### CSS
+
+### JavaScript
 
 
+### Python
 
+I have used the PEP8 CI Python Linter to validate the python files in my project.
 
-### Bugs
-
-### Known Bugs
-
-
-
-### Solved Bugs
-
+Test results [here](https://docs.google.com/document/d/1c2IqR1l4VlGIBedS2BYaSYXljgQvGYrJbcNQW74Sn0w/edit?tab=t.0)
 
 ## Credits
 
