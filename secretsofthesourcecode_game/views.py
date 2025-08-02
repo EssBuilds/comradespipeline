@@ -20,6 +20,10 @@ def start_game(request):
 
 def make_accusation(request):
     scenario_id = request.session.get('scenario_id')
+      # If no scenario in session, redirect to start game
+    if not scenario_id:
+        return redirect('start_game')
+    
     scenario = get_object_or_404(Scenario, id=scenario_id)
 
     if request.method == "POST":
